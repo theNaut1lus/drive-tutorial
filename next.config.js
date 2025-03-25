@@ -9,11 +9,11 @@ import "./src/env.js";
 /** @type {import("next").NextConfig} */
 const config = {
     eslint: {
-        ignoreDuringBuilds: true,
+        ignoreDuringBuilds: false,
     },
 
     typescript: {
-        ignoreBuildErrors: true,
+        ignoreBuildErrors: false,
     },
 };
 
