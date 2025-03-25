@@ -14,3 +14,10 @@ Technologies used:
 v0 : for creating component samples for us to mock up a google drive looking UI with data props
 netlify: for live hsoting, live demo accross all branches and pull requests.
 singlestore: does everything, high perf transactions, scalable, get analytics of rel dbs and perf of document stores. alrady have drizzle bindings. get 1 db free.
+
+## Note from 25/03/2025: just finished connected database.
+
+- [ ] update schema to show files and folders
+- [ ] Manually insert examples
+- [ ] Render onot UI
+- [ ] Push and make sure all works
