@@ -24,4 +24,5 @@ singlestore: does everything, high perf transactions, scalable, get analytics of
 
 ## Note from 26/03/2025: db rendering done.
 
+- [ ] merge db pull request onto main and start onto new branch to save state.
 - [ ] folder views push to use router and onto URL
