@@ -4,7 +4,7 @@
 
 ## TODO
 
-- [ ] Set up database and data model
+- [x] Set up database and data model
 - [ ] Move folder open state to URL
 - [ ] Add Auth
 - [ ] Add file uploading
@@ -17,7 +17,11 @@ singlestore: does everything, high perf transactions, scalable, get analytics of
 
 ## Note from 25/03/2025: just finished connected database.
 
-- [ ] update schema to show files and folders
-- [ ] Manually insert examples
-- [ ] Render onot UI
-- [ ] Push and make sure all works
+- [x] update schema to show files and folders
+- [x] Manually insert examples
+- [x] Render onto UI
+- [x] Push and make sure all works
+
+## Note from 26/03/2025: db rendering done.
+
+- [ ] folder views push to use router and onto URL
