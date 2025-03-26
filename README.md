@@ -4,7 +4,7 @@
 
 ## TODO
 
-- [ ] Set up database and data model
+- [x] Set up database and data model
 - [ ] Move folder open state to URL
 - [ ] Add Auth
 - [ ] Add file uploading
@@ -13,3 +13,16 @@ Technologies used:
 
 v0 : for creating component samples for us to mock up a google drive looking UI with data props
 netlify: for live hsoting, live demo accross all branches and pull requests.
+singlestore: does everything, high perf transactions, scalable, get analytics of rel dbs and perf of document stores. alrady have drizzle bindings. get 1 db free.
+
+## Note from 25/03/2025: just finished connected database.
+
+- [x] update schema to show files and folders
+- [x] Manually insert examples
+- [x] Render onto UI
+- [x] Push and make sure all works
+
+## Note from 26/03/2025: db rendering done.
+
+- [ ] merge db pull request onto main and start onto new branch to save state.
+- [ ] folder views push to use router and onto URL
