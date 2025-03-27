@@ -27,6 +27,6 @@ singlestore: does everything, high perf transactions, scalable, get analytics of
 
 - [x] merge db pull request onto main and start onto new branch to save state.
 - [x] folder views push to use router and onto URL
-- [ ] Change folders to link components, remove all client state
+- [x] Change folders to link components, remove all client state
 - [ ] clean up the database and data fetching patterns
 - [ ] Real homepage
