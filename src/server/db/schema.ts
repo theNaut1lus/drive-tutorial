@@ -16,7 +16,7 @@ export const createTable = singlestoreTableCreator(
   (name) => `drive-tutorial_${name}`,
 );
 
-export const files = createTable(
+export const files_table = createTable(
   "files_table",
   {
     //singlestore only wants bigint as it is built for scale in mind, initial push works, but subsequent fail. hence bigint.
@@ -34,7 +34,7 @@ export const files = createTable(
   },
 );
 
-export const folders = createTable(
+export const folders_table = createTable(
   "folders_table",
   {
     id: bigint("id", { mode: "number", unsigned: true })
