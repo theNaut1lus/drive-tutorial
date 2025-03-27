@@ -8,6 +8,7 @@
 - [x] Move folder open state to URL
 - [ ] Add Auth
 - [ ] Add file uploading
+- [ ] Add analytics
 
 Technologies used:
 
@@ -24,8 +25,8 @@ singlestore: does everything, high perf transactions, scalable, get analytics of
 
 ## Note from 26/03/2025 + 27/03/2025: db rendering done.
 
-- [ ] merge db pull request onto main and start onto new branch to save state.
-- [ ] folder views push to use router and onto URL
+- [x] merge db pull request onto main and start onto new branch to save state.
+- [x] folder views push to use router and onto URL
 - [ ] Change folders to link components, remove all client state
 - [ ] clean up the database and data fetching patterns
 - [ ] Real homepage
