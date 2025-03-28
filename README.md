@@ -41,4 +41,4 @@ uploadthing: file uploads functionality for web apps. free 2gb storage.
 - [ ] Add ownership to files and folders
 - [ ] upload files to the correct folder
 - [ ] delete files button
-- [ ] allow non-image file upload
+- [x] allow non-image file upload
