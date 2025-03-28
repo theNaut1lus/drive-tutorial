@@ -3,7 +3,7 @@
 /* tailwind v4 has no config file, so we need to add it here. */
 @import "uploadthing/tw/v4";
 @import "@uploadthing/react/styles.css";
-
+/* stylelint-disable */
 @source "../node_modules/@uploadthing/dist"; /** <-- depends on your project structure */
 
 @custom-variant dark (&:is(.dark *));
@@ -12,7 +12,7 @@
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
+/* stylelint-disable */
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
