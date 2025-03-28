@@ -25,6 +25,17 @@ export const QUERIES = {
     return parents;
   },
 
+  getFolderById: async function (folderId: number) {
+    const folder = await db
+      .select()
+      .from(folderSchema)
+      .where(eq(folderSchema.id, folderId));
+    if (!folder[0]) {
+      throw new Error("Folder not found");
+    }
+    return folder[0];
+  },
+
   getFolders: async function (folderId: number) {
     return db
       .select()
@@ -46,9 +57,12 @@ export const MUTATIONS = {
       name: string;
       size: number;
       url: string;
+      parent: number;
     };
     userId: string;
   }) {
-    return await db.insert(filesSchema).values({ ...input.file, parent: 1 });
+    return await db
+      .insert(filesSchema)
+      .values({ ...input.file, ownerId: input.userId });
   },
 };

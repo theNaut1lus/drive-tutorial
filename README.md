@@ -36,5 +36,9 @@ uploadthing: file uploads functionality for web apps. free 2gb storage.
 - [x] merge db pull request onto main and start onto new branch to save state.
 - [x] folder views push to use router and onto URL
 - [x] Change folders to link components, remove all client state
-- [ ] clean up the database and data fetching patterns
+- [x] clean up the database and data fetching patterns
 - [ ] Real homepage
+- [ ] Add ownership to files and folders
+- [ ] upload files to the correct folder
+- [ ] delete files button
+- [ ] allow non-image file upload
