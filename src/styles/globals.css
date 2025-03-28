@@ -1,5 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+/* tailwind v4 has no config file, so we need to add it here. */
+@import "uploadthing/tw/v4";
+@import "@uploadthing/react/styles.css";
+
+@source "../node_modules/@uploadthing/dist"; /** <-- depends on your project structure */
 
 @custom-variant dark (&:is(.dark *));
 

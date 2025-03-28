@@ -6,8 +6,8 @@
 
 - [x] Set up database and data model
 - [x] Move folder open state to URL
-- [ ] Add Auth
-- [ ] Add file uploading
+- [x] Add Auth
+- [x] Add file uploading
 - [ ] Add analytics
 
 Technologies used:
@@ -18,6 +18,7 @@ singlestore: does everything, high perf transactions, scalable, get analytics of
 netlify: cloud storage, quick deploy from github, PR previews.
 singlestore + drizzzle: database storage on sqlite and database connection library.
 clerk: user management and auth. Also gives alot of pre-made components for sign-in/out stuff that helps us not to make these ourselves. we'll be in dev mode so no need to create an application specific oauth, will use the the clerk servers.
+uploadthing: file uploads functionality for web apps. free 2gb storage.
 
 ## Note from 25/03/2025: just finished connected database.
 
@@ -26,7 +27,11 @@ clerk: user management and auth. Also gives alot of pre-made components for sign
 - [x] Render onto UI
 - [x] Push and make sure all works
 
-## Note from 26/03/2025 + 27/03/2025: db rendering done.
+## 26/03/2025: db rendering done
+
+## 27/03/2025: folder urls on routes
+
+## 28/03/2025: clerk auth, file uploads using tailwind v4
 
 - [x] merge db pull request onto main and start onto new branch to save state.
 - [x] folder views push to use router and onto URL
