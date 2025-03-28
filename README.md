@@ -17,7 +17,7 @@ netlify: for live hsoting, live demo accross all branches and pull requests.
 singlestore: does everything, high perf transactions, scalable, get analytics of rel dbs and perf of document stores. alrady have drizzle bindings. get 1 db free.
 netlify: cloud storage, quick deploy from github, PR previews.
 singlestore + drizzzle: database storage on sqlite and database connection library.
-clerk: user management and auth. Also gives alot of pre-made components for sign-in/out stuff that helps us not to make these ourselves.
+clerk: user management and auth. Also gives alot of pre-made components for sign-in/out stuff that helps us not to make these ourselves. we'll be in dev mode so no need to create an application specific oauth, will use the the clerk servers.
 
 ## Note from 25/03/2025: just finished connected database.
 
