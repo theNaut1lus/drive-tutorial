@@ -1,4 +1,4 @@
-import "server-only";
+//import "server-only";
 
 import {
   bigint,
@@ -7,13 +7,15 @@ import {
   singlestoreTable,
   index,
   singlestoreTableCreator,
+  timestamp,
 } from "drizzle-orm/singlestore-core";
 import { url } from "inspector";
 import { SignalZero } from "lucide-react";
+import { time } from "console";
 
 //to add the prefix for every table created on singlestore DB.
 export const createTable = singlestoreTableCreator(
-  (name) => `drive-tutorial_${name}`,
+  (name) => `drive_tutorial_${name}`,
 );
 
 export const files_table = createTable(
@@ -24,15 +26,22 @@ export const files_table = createTable(
     id: bigint("id", { mode: "number", unsigned: true })
       .primaryKey()
       .autoincrement(),
+    ownerId: text("ownerId").notNull(),
     name: text("name").notNull(),
     size: int("size").notNull(),
     url: text("url").notNull(),
     parent: bigint("parent", { mode: "number", unsigned: true }).notNull(),
+    created_at: timestamp("created_at").notNull().defaultNow(),
   },
-  (tempTable) => {
-    return [index("parent_index").on(tempTable.parent)];
+  (t) => {
+    return [
+      index("parent_index").on(t.parent),
+      index("ownerId_index").on(t.ownerId),
+    ];
   },
 );
+
+export type DB_filetype = typeof files_table.$inferSelect;
 
 export const folders_table = createTable(
   "folders_table",
@@ -40,10 +49,17 @@ export const folders_table = createTable(
     id: bigint("id", { mode: "number", unsigned: true })
       .primaryKey()
       .autoincrement(),
+    ownerId: text("ownerId").notNull(),
     name: text("name").notNull(),
     parent: bigint("parent", { mode: "number", unsigned: true }),
+    created_at: timestamp("created_at").notNull().defaultNow(),
   },
   (t) => {
-    return [index("parent_index").on(t.parent)];
+    return [
+      index("parent_index").on(t.parent),
+      index("ownerId_index").on(t.ownerId),
+    ];
   },
 );
+
+export type DB_folderType = typeof folders_table.$inferSelect;
