@@ -36,10 +36,12 @@ export const ourFileRouter = {
       const folder = await QUERIES.getFolderById(input.folderId);
 
       // If the folder doesn't exist, throw an error
+      // eslint-disable-next-line @typescript-eslint/only-throw-error
       if (!folder) throw new UploadThingError("Folder not found");
 
       // folder owner needs to be the same as the user uploading the file
       if (folder.ownerId !== user.userId) {
+        // eslint-disable-next-line @typescript-eslint/only-throw-error
         throw new UploadThingError("Unauthorized");
       }
 
