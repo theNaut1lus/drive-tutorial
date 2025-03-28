@@ -8,17 +8,17 @@
 - [x] Move folder open state to URL
 - [x] Add Auth
 - [x] Add file uploading
-- [ ] Add analytics
+- [x] Add analytics
 - [x] merge db pull request onto main and start onto new branch to save state.
 - [x] folder views push to use router and onto URL
 - [x] Change folders to link components, remove all client state
 - [x] clean up the database and data fetching patterns
-- [ ] Real homepage
-- [ ] Add ownership to files and folders
-- [ ] upload files to the correct folder
+- [x] Add ownership to files and folders
+- [x] upload files to the correct folder
 - [ ] delete files button
 - [x] allow non-image file upload
 - [ ] real homepage + onboarding
+- [ ] fix netlify redirects
 
 Technologies used:
 
