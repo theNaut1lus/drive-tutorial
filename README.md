@@ -19,8 +19,8 @@
 - [x] allow non-image file upload
 - [ ] real homepage + onboarding
 - [ ] fix netlify redirects
-
-Technologies used:
+- [x] fix sort order
+      Technologies used:
 
 v0 : for creating component samples for us to mock up a google drive looking UI with data props
 netlify: for live hsoting, live demo accross all branches and pull requests.
