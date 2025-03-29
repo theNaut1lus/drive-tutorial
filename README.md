@@ -43,3 +43,7 @@ posthog: app analytics
 ## 27/03/2025: folder urls on routes
 
 ## 28/03/2025: clerk auth, file uploads using tailwind v4
+
+Extra todo:
+
+- [ ] Folder deletion: make sure to fetch all the folers and files that have the folder in question as a parent, and then are deleted as well.
