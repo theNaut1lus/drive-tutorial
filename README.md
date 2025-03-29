@@ -15,12 +15,14 @@
 - [x] clean up the database and data fetching patterns
 - [x] Add ownership to files and folders
 - [x] upload files to the correct folder
-- [ ] delete files button
+- [x] delete files button
 - [x] allow non-image file upload
-- [ ] real homepage + onboarding
+- [ ] real homepage
+- [ ] onboarding
 - [ ] fix netlify redirects
+- [x] fix sort order
 
-Technologies used:
+## Technologies used:
 
 v0 : for creating component samples for us to mock up a google drive looking UI with data props
 netlify: for live hsoting, live demo accross all branches and pull requests.
@@ -38,8 +40,12 @@ posthog: app analytics
 - [x] Render onto UI
 - [x] Push and make sure all works
 
-## 26/03/2025: db rendering done
+26/03/2025: db rendering done
 
-## 27/03/2025: folder urls on routes
+27/03/2025: folder urls on routes
 
-## 28/03/2025: clerk auth, file uploads using tailwind v4
+28/03/2025: clerk auth, file uploads using tailwind v4
+
+### Extra todo:
+
+- [ ] Folder deletion: make sure to fetch all the folers and files that have the folder in question as a parent, and then are deleted as well.

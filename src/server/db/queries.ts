@@ -40,14 +40,16 @@ export const QUERIES = {
     return db
       .select()
       .from(folderSchema)
-      .where(eq(folderSchema.parent, folderId));
+      .where(eq(folderSchema.parent, folderId))
+      .orderBy(folderSchema.id);
   },
 
   getFiles: async function (folderId: number) {
     return db
       .select()
       .from(filesSchema)
-      .where(eq(filesSchema.parent, folderId));
+      .where(eq(filesSchema.parent, folderId))
+      .orderBy(filesSchema.id);
   },
 };
 
