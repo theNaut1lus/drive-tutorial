@@ -17,10 +17,14 @@
 - [x] upload files to the correct folder
 - [x] delete files button
 - [x] allow non-image file upload
-- [ ] real homepage
-- [ ] onboarding
-- [ ] fix netlify redirects
+- [x] real homepage
+- [x] onboarding
+- [x] fix netlify redirects
 - [x] fix sort order
+- [x] update schema to show files and folders
+- [x] Manually insert examples
+- [x] Render onto UI
+- [x] Push and make sure all works
 
 ## Technologies used:
 
@@ -35,17 +39,19 @@ posthog: app analytics
 
 ## Note from 25/03/2025: just finished connected database.
 
-- [x] update schema to show files and folders
-- [x] Manually insert examples
-- [x] Render onto UI
-- [x] Push and make sure all works
-
 26/03/2025: db rendering done
 
 27/03/2025: folder urls on routes
 
 28/03/2025: clerk auth, file uploads using tailwind v4
 
+29/03/2025: final working version (- extra stuff)
+
 ### Extra todo:
 
 - [ ] Folder deletion: make sure to fetch all the folers and files that have the folder in question as a parent, and then are deleted as well.
+- [ ] Folder creation: make a server action and takes a name and parentid, creates the folder (and sets the folderid)
+- [ ] Access control: Check if user has access before showing the folder page
+- [ ] "File view" page: view the file in-app instead of just redirecting to uploadthing
+- [ ] Toasts
+- [ ] Gray out a row while it's being deleted (set a state on the component while it is being deleted or use transitions)
